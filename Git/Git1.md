@@ -46,7 +46,7 @@ git config --global user.email "xxxx"
 
 2 远程克隆：git clone url
 
-
+![image-20211211224625273](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20211211224625273.png)
 
 #### 文件状态
 
@@ -92,4 +92,12 @@ git push origin --delete [branch-name] 删除远程分支
 
 
 
-一般操作需要保证master稳定运行，开发时建一个 Dev 分支，然后
+一般操作需要保证master稳定运行，开发时建一个 Dev 分支，然后将 Dev 分支合并
+
+git log 查看提交日志
+
+git reset --hard commitID
+
+git reflog 可以在回退后查看全部操作
+
+git fetch 获取远程服务器
