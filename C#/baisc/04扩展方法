@@ -1,0 +1,31 @@
+# 扩展方法
+
+给 String 添加一个扩展方法：
+
+```c#
+ static class StringExtend
+    {
+        public static void print(this String ss)
+        {
+            Console.WriteLine(ss);
+        }
+    } 
+ static void Main(string[] args)
+        {
+            "helloworld".print();
+            Console.ReadLine();
+        }
+```
+
+扩展 List 的 foreach 方法
+
+```
+public static void ForEach<T>(this List<T> list,Action<T> func)
+        {
+            foreach(var item in list)
+            {
+                func(item);
+            }
+        }
+```
+
